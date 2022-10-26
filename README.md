@@ -1,5 +1,4 @@
-# net-core-code-quality-reports
-net core code quality reporting tools
+# Net core code quality reporting tools
 
 ![Executables](./images/executables.png)
 
@@ -30,6 +29,7 @@ dotnet sonarscanner end /d:sonar.login="squ_2bb9cbd19da3ad7e797edff029f89bee1816
 
 ![Sonar](./images/sonar.png)
 
-## references
+## References
+
 https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-code-coverage?tabs=windows
 https://docs.sonarqube.org/latest/analysis/test-coverage/dotnet-test-coverage/
