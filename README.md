@@ -9,7 +9,7 @@ cobertura-report.bat - gerate html report:
  start .\coveragereport\index.htm
 ```
 
-![Alt text](./images/cobertura.png?raw=true "Code coverage")
+![Code coverage](./images/cobertura.png)
 
 run sonarqube:
 
