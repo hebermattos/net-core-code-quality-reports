@@ -16,7 +16,7 @@ coverage.bat - gerate local coverage html report:
  start .\coveragereport\index.htm
 ```
 
-![Code coverage](./images/cobertura.png)
+![Code coverage](./images/coverage.png)
 
 run sonarqube:
 
