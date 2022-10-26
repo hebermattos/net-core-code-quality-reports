@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using net_core_code_quality_reports.services;
 
 namespace net_core_code_quality_reports.Controllers;
 
@@ -6,27 +7,20 @@ namespace net_core_code_quality_reports.Controllers;
 [Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
-    {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-    };
 
     private readonly ILogger<WeatherForecastController> _logger;
+    private readonly WeatherForecastService _wfs;
 
     public WeatherForecastController(ILogger<WeatherForecastController> logger)
     {
         _logger = logger;
+        _wfs =  new WeatherForecastService();
     }
 
     [HttpGet(Name = "GetWeatherForecast")]
     public IEnumerable<WeatherForecast> Get()
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        return _wfs.GetWeatherForecasts();
     }
+
 }
