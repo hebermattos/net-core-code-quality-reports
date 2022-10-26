@@ -8,7 +8,7 @@ install report tool:
 dotnet tool install -g dotnet-reportgenerator-globaltool
 ```
 
-cobertura-report.bat - gerate local html report:
+coverage.bat - gerate local coverage html report:
 
 ```
  dotnet test --collect:"XPlat Code Coverage"
