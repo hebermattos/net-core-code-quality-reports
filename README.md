@@ -1,4 +1,4 @@
-# Net core code quality reporting tools
+# Net core code quality reporting (Free) tools
 
 ![Executables](./images/executables.png)
 
