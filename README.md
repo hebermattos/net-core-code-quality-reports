@@ -30,7 +30,7 @@ install coverage collector:
 dotnet tool install --global dotnet-coverage
 ```
 
-sonar.bat - gerenerate sonar code quality and coverage report (must generate token):
+sonar.bat - gerenerate sonar code quality and coverage report (token must generate in sonarqube administration screen):
 
 ```
 dotnet sonarscanner begin /k:"wheater-forecast" /d:sonar.login="squ_2bb9cbd19da3ad7e797edff029f89bee1816843a" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
