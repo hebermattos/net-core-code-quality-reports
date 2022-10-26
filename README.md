@@ -1,7 +1,7 @@
 # net-core-code-quality-reports
 net core code quality reporting tools
 
-![Bats](./images/bats.png)
+![Executables](./images/executables.png)
 
 cobertura-report.bat - gerate html report:
 
