@@ -2,6 +2,12 @@
 
 ![Executables](./images/executables.png)
 
+install report tool:
+
+```
+dotnet tool install -g dotnet-reportgenerator-globaltool
+```
+
 cobertura-report.bat - gerate local html report:
 
 ```
@@ -16,6 +22,12 @@ run sonarqube:
 
 ```
 docker run -p 9000:9000 sonarqube
+```
+
+install coverage collector:
+
+```
+dotnet tool install --global dotnet-coverage
 ```
 
 sonar.bat - gerenerate sonar code quaility and coverage report (must generate token):
