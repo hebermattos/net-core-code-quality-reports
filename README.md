@@ -2,7 +2,7 @@
 
 ![Executables](./images/executables.png)
 
-cobertura-report.bat - gerate html report:
+cobertura-report.bat - gerate local html report:
 
 ```
  dotnet test --collect:"XPlat Code Coverage"
