@@ -18,7 +18,7 @@ run sonarqube:
 docker run -p 9000:9000 sonarqube
 ```
 
-sonar.bat - gerenerate sonar code quaility and coverage report:
+sonar.bat - gerenerate sonar code quaility and coverage report (must generate token):
 
 ```
 dotnet sonarscanner begin /k:"wheater-forecast" /d:sonar.login="squ_2bb9cbd19da3ad7e797edff029f89bee1816843a" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
